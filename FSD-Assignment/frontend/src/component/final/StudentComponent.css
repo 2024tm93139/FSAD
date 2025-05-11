@@ -1,0 +1,8 @@
+.student_card{
+    width: 13rem;
+    margin: 0.85rem
+}
+
+.student_edit_form{
+    padding: .5em 0.5em 0;
+}

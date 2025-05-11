@@ -1,0 +1,5 @@
+package com.bits.fsd.enums;
+
+public enum Grade {
+	FIRST, SECOND, THIRD, FOURTH, FIVE, SIXTH, SEVENTH, EIGTH, NINTH, HIGHSCHOOL, FIRSTYEAR, INTERMEDIATE
+}

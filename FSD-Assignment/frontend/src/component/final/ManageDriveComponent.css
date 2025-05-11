@@ -1,0 +1,25 @@
+.drive_management_body{
+    
+}
+
+.drive_card{
+margin : 2.2em;
+width: 15em;
+padding-bottom: 1em;
+}
+
+.new_drive_data{
+    width: 15em
+}
+
+.add_new_drive_data{
+    width : 10em !important;
+    margin-left: 2em;
+}
+
+.new_drive_error{
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #e21226;
+}

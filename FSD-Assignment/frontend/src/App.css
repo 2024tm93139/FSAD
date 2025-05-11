@@ -1,0 +1,41 @@
+div{
+    border-bottom: black;
+}
+.main-body{
+    padding: 0 1rem 0 1rem;
+}
+
+.main-navigation{
+    background-color: aqua;
+    min-height: 4em;
+    border-radius: 1rem;
+    padding: .5em 1.5em .5em 1.5em;
+}
+
+.main-navigation-child{
+    padding: .5em 0 .5em 1.5em;
+}
+
+.main-navigation-item{
+margin-right: .5em;
+background-color: tomato;
+border-radius: .5em;
+padding :0 .3em 0 .3em;
+}
+
+.main-body-left{
+    background-color: antiquewhite;
+    height: auto;
+    width: 19.5rem;
+    border-radius: 1rem;
+    margin:.5rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+
+.main-body-right{
+    background-color: beige;
+    width:59rem;
+    border-radius: 1rem;
+    margin: .5rem;
+}
