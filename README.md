@@ -1,4 +1,4 @@
-# FSAD
+# FSAD Project setup guide.
 This repository contain code for both frontend and backend part of assignment. Both codebase are independent and can be deployed separately. 
 Frontend is created using React. Consuming exposed backend API using fetch and showing data on frontend.
 Backend is built on Java using Spring boot. Database is MySql and CRUD operations are handled by Hibernate (an ORM framework).
