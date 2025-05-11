@@ -91,8 +91,8 @@ public class StudentController {
 		Cell cellRollNo = firstrow.createCell(2);
 		cellRollNo.setCellValue("Roll no");
 
-		for (int rowIndex = 1; rowIndex < vaccinatedStudent.size(); rowIndex++) {
-			Row row = sheet.createRow(rowIndex);
+		for (int rowIndex = 0; rowIndex < vaccinatedStudent.size(); rowIndex++) {
+			Row row = sheet.createRow(rowIndex+1);
 			Student student = vaccinatedStudent.get(rowIndex);
 			Cell firstcell = row.createCell(0);
 			firstcell.setCellValue(student.getName());

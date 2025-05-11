@@ -62,7 +62,7 @@ function ManageDriveComponent() {
     var date = new Date();
     console.log(date);
     var futureDate = new Date();
-    futureDate.setDate(date.getDate() + 25);
+    futureDate.setDate(date.getDate() + 15);
     var year = futureDate.getFullYear();
     var month;
     if (futureDate.getMonth() < 10) {
@@ -81,7 +81,45 @@ function ManageDriveComponent() {
   }, [minDate]);
 
   if (drives.length === 0) {
-    return "No drive found";
+    return (
+      <>
+        <div className="drive_management_body row">
+          <div className="row g-3 align-items-center">
+            <div className="col-auto">Drive Date:</div>{" "}
+            <input
+              type="date"
+              className="form-control new_drive_data"
+              min={minDate}
+              required
+              onChange={(event) => setNewDriveDate(event.target.value)}
+            />
+            <div className="col-auto">Vaccinae Name:</div>{" "}
+            <input
+              type="text"
+              className="form-control new_drive_data"
+              required
+              onChange={(event) => setVaccinename(event.target.value)}
+            />{" "}
+            <div className="col-auto">Available Doses:</div>{" "}
+            <input
+              type="number"
+              min={1}
+              className="form-control new_drive_data number_box"
+              required
+              onChange={(event) => setAvailableDose(event.target.value)}
+            />
+            <button
+              type="button"
+              className="btn btn-primary add_new_drive_data"
+              onClick={HandleCreateNewDrive}
+            >
+              Add Drive
+            </button>
+            <div className="new_drive_error">{errorMessage}</div>
+          </div>
+        </div>
+      </>
+    );
   }
 
   function handleEdit(id: any) {
@@ -111,12 +149,14 @@ function ManageDriveComponent() {
           required
           onChange={(event) => setVaccinename(event.target.value)}
         />{" "}
-        {/* <input
-          type="text"
-          className="form-control new_drive_data"
+        <div className="col-auto">Available Doses:</div>{" "}
+        <input
+          type="number"
+          min={1}
+          className="form-control new_drive_data number_box"
           required
           onChange={(event) => setAvailableDose(event.target.value)}
-        /> */}
+        />
         <button
           type="button"
           className="btn btn-primary add_new_drive_data"

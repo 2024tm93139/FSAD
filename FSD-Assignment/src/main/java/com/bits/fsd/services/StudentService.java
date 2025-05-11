@@ -84,10 +84,10 @@ public class StudentService {
 			Student model = student.get();
 			if (StringUtils.isNotBlank((String) studentForm.get("name")))
 				model.setName((String) studentForm.get("name"));
-			if (StringUtils.isNotBlank((String) studentForm.get("rollno")))
-				model.setRollNo((Integer) studentForm.get("rollno"));
+			if (StringUtils.isNotBlank((String) studentForm.get("rollNo")))
+				model.setRollNo(Integer.valueOf((String) studentForm.get("rollNo")) );
 			if (StringUtils.isNotBlank((String) studentForm.get("status")))
-				model.setVaccinated((boolean) studentForm.get("status"));
+				model.setVaccinated(Boolean.valueOf((String)studentForm.get("status")));
 			studentRepository.save(model);
 		}
 

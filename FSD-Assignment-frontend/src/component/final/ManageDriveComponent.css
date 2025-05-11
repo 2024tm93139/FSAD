@@ -1,5 +1,5 @@
-.drive_management_body{
-    
+.number_box{
+    width :5em !important;
 }
 
 .drive_card{
@@ -14,7 +14,8 @@ padding-bottom: 1em;
 
 .add_new_drive_data{
     width : 10em !important;
-    margin-left: 2em;
+    margin-left: 20em;
+    align-self: center;
 }
 
 .new_drive_error{
